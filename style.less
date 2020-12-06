@@ -1,0 +1,471 @@
+@border :black 3px solid;
+@radius:3px;
+@send: rgb(16, 180, 16);
+@cancel: rgb(223, 23, 23);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);
+
+@rhino: #323b40;
+@rhinoMid: #4f585e;
+@teal: #0096a1;
+@tealMid: #0ebac7;
+@red: #fc625c;
+@amber: #fdbc40;
+@green: #34c748;
+@offWhite: #e9eaea;
+*{
+    -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+  .head {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 30px;
+    padding-top: 0px;
+    flex-direction: row;
+    height: 70px;
+    color: gray;
+    font-size: 25px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  
+  .head a:hover{
+    text-decoration: none;
+    color: white;
+  }
+  .head a{
+    color: gray;
+  }
+  #home,
+  #aboutus,
+  #contacts,
+  #videos,
+  #videographers,
+  #reviews {
+    margin-top: 19px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white ;
+  }
+  .mainbody {
+    padding-top:  0;
+    background-image: url(img/Без-имени-1.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 751px;
+    text-align: center;
+  }
+  .mainbody h1{
+    padding-top: 200px;
+    font-size: 50px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+  }
+  #logo a{
+    color:blacks;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black ;
+  }
+  .last {
+    text-align: center;
+    padding-top: 50px;
+    background-image: url(img/white-flecks.png);
+    padding-bottom: 50px;
+  }
+  .foto{
+    background-image: url(img/dark-gray-flecks.png);
+    height: 700px;
+  }
+  .obwee_foto{
+    background-image: url(img/photo-camera-fotoapparat-5794.jpg);
+  }
+  .videographerss{
+    background-image: url(img/white-flecks.png);
+    height: 700px;
+    
+  }
+  .obwee_foto img{
+    width: 80%;
+    height: 120%;
+    margin-left: 10%;
+    margin-top: 55px;
+  }
+  .Reviews{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin-left: 19%;
+  }
+  .review{
+    background-image: url(img/light-gray-flecks.png);
+  }
+  .photos,
+  .videos {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 50px;
+  }
+  #photo1 img {
+    width: 70%;
+    padding-top: 50px;
+  }
+  #photo2 img {
+    width: 70%;
+  }
+  #photo3 img {
+    width: 70%;
+    padding-top: 50px;
+  }
+  #video1 video {
+    width: 350px;
+    height: 250px;
+    padding-top: 50px;
+  }
+  #video2 video {
+    width: 350px;
+    height: 250px;
+  }
+  #video3 video {
+    width: 350px;
+    height: 250px;
+    padding-top: 50px;
+  }
+  .obwee_foto {
+    height: 500px;
+    background-image: url();
+  }
+  #form_container {
+    padding: 15px 15px;
+    margin-top: 130px;
+    margin-left: -80px;
+    float: left;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  .upload-btn-wrapper 
+  {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .upload-btn-wrapper input[type=file] 
+  {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  
+  .contact {
+    height: 750px;
+    top: 0;
+    background-image: url("img/fon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #popup {
+    position: absolute;
+    top: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 2;
+    opacity: 0;
+  }
+  .popup-content {
+    background-color: white;
+    height: 330px;
+    width: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  #map {
+    height: 500px;
+    width: 600px;
+    float:right;
+    position: absolute;
+    margin-left: 800px;
+    margin-top: -510px;
+  }
+  .nav{
+    float: left;
+    display: none;
+  }
+  label{
+    margin: 8px 0 0 20px;
+    font-size: 30px;
+  }
+  #toggle{
+    display: none;
+  }
+  .wrapper {
+      height: 500px;
+      margin: auto;
+      position: relative;
+    width: 1000px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .slider {
+      background-image: url(img/light-gray-scratone.png);
+      height: inherit;
+      overflow: hidden;
+      position: relative;
+      width: inherit;
+      -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+      -moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+      -o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+      box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  }
+  .wrapper > input {
+      display: none;
+  }
+  .slides {
+      height: inherit;
+      position: absolute;
+      width: inherit;
+  }
+  .wrapper .controls {
+      left: 50%;
+      margin-left: -60px;
+      position: absolute;
+  }
+  
+  .wrapper label {
+      cursor: pointer;
+      display: inline-block;
+      height: 8px;
+      margin: 25px 12px 0 16px;
+      position: relative;
+      width: 8px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+  }
+  
+  .wrapper label:after {
+      border: 2px solid rgb(0, 0, 0);
+      content: " ";
+      display: block;
+      height: 12px;
+      left: -2.25px;
+      position: absolute;
+      top: -2.25px;
+      width: 12px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+  }
+  .wrapper label {
+      cursor: pointer;
+      display: inline-block;
+      height: 8px;
+      margin: 25px 12px 0 16px;
+      position: relative;
+      width: 8px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      -webkit-transition: background ease-in-out .5s;
+      -moz-transition: background ease-in-out .5s;
+      -o-transition: background ease-in-out .5s;
+      transition: background ease-in-out .5s;
+  }
+  
+  .wrapper label:hover, 
+  #slide1:checked ~ .controls label:nth-of-type(1),
+  #slide2:checked ~ .controls label:nth-of-type(2),
+  #slide3:checked ~ .controls label:nth-of-type(3) {
+      background: rgb(0, 0, 0);
+  }
+  
+  .slides {
+      height: inherit;
+      opacity: 0;
+      position: absolute;
+      width: inherit;
+      z-index: 0;
+      -webkit-transform: scale(1.5);
+      -moz-transform: scale(1.5);
+      -o-transform: scale(1.5);
+      transform: scale(1.5);
+      -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+      -moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+      -o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+      transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+  }
+  
+  #slide1:checked ~ .slider > .slide1,
+  #slide2:checked ~ .slider > .slide2,
+  #slide3:checked ~ .slider > .slide3 {
+      opacity: 1;
+      z-index: 1;
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+  }
+  footer {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    div.social-media-links {
+          background: @rhino;
+          overflow: hidden;
+          padding-bottom: 4px;
+          text-align: center;
+          ul {
+              margin: 0;
+              padding: 0;
+          }
+          li {
+              display: inline;
+              margin: 0;
+              padding: 0;
+          }
+          a {
+              border-bottom: 0px solid rgba(0,0,0,0.95);
+              border-radius: 4px;
+              box-shadow: inset 0 -3px 0 0 rgba(0,0,0,0), 0 6px 8px rgba(0,0,0,0), 0 24px 24px rgba(0,0,0,0), 0 36px 36px rgba(0,0,0,0), 0 64px 64px rgba(0,0,0,0), 0 64px 128px rgba(0,0,0,0), 0 120px 0 rgba(0,0,0,0), 0 86px 8px 6px rgba(0,0,0,0),;
+              display: inline-block;
+        height: 30px;
+              padding: 20px;
+              position: relative;
+              transition: .2s ease-in;
+        width: 30px;
+              svg {
+          left: 20px;
+          position: absolute;
+          top: 20px;
+                  height: 30px;
+                  width: 30px;
+          &.glow {
+            path, circle {
+              fill: rgba(0,0,0,0);
+            }
+          }
+                  path, circle {
+                      fill: @teal;
+                      transition: .2s ease-in;
+                  }
+              }
+          }
+          a:hover {
+              transform: translateY(-4px);
+              box-shadow: inset 0 -3px 0 0 rgba(0,0,0,0.1), 0 6px 8px rgba(0,0,0,0.05), 0 24px 24px rgba(0,0,0,0.05), 0 36px 36px rgba(0,0,0,0.05), 0 64px 64px rgba(0,0,0,0.15), 0 64px 128px rgba(0,0,0,0.15), 0 86px 8px 6px fadeout(@tealMid, 75), 0 83px 4px 0px fadeout(@tealMid, 5);
+              svg {
+          &.glow {
+            filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><f…ter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
+            filter: blur(2px);
+            path, circle {
+              fill: fadeout(@tealMid, 40);
+            }
+          }
+                  path, circle {
+                      fill: @tealMid;
+                  }
+              }
+          }
+      }
+  }
+  @media screen and (max-width:1200px){
+  .photos,.videos{
+    flex-direction: column;
+  }
+  .mainbody{
+    background-repeat: no-repeat;
+    top:100px;
+  }
+  #video1 video {
+    width: 550px;
+    height: 450px;
+    padding-top: 50px;
+  }
+  #video2 video {
+    width: 550px;
+    height: 250px;
+  }
+  #video3 video {
+    width: 550px;
+    height: 450px;
+    padding-top: 50px;
+  }
+  }
+  @media screen and (max-width:1000px){
+    .photos,.videos{
+      flex-direction: column;
+    }
+    .nav{
+      display: inline;
+    }
+    label{
+      cursor: pointer;
+      display: block;
+    }
+    .head{
+      display: block;
+      text-align: center;
+      padding-top: 60px;
+      font-size: 25px;
+      margin-bottom: 600px;
+    }
+    #home,
+    #aboutus,
+    #contacts,
+    #videos,
+    #videographers,
+    #reviews{
+      border-top: black 2px solid;
+      margin-right: 30px;
+      padding: 10px 0;
+      
+  }
+  .mainbody h1{
+    padding-top: 0;
+    margin-bottom: 30px;
+  }
+  #toggle:checked + .head {
+    display: none;
+     
+  }
+  
+    
+    .mainbody{
+      background-repeat: no-repeat;
+      padding-top: 600px;
+    }
+    #video1 video {
+      width: 550px;
+      height: 450px;
+      padding-top: 50px;
+    }
+    #video2 video {
+      width: 550px;
+      height: 250px;
+    }
+    #video3 video {
+      width: 550px;
+      height: 450px;
+      padding-top: 50px;
+    }
+}  
